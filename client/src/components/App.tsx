@@ -4,8 +4,26 @@ import AboutMe from "./AboutMe";
 import Header from "./Header";
 import WelcomeImage from "./WelcomeImage";
 import Experience from "./Experience";
+import Repositories from "./Repositories";
 
 class App extends React.Component {
+  public componentDidMount() {
+    this.callApi()
+      .then(res => console.log(res.express))
+      .catch(err => console.log(err));
+  }
+
+  public callApi = async () => {
+    const response = await fetch("/api/hello");
+    const body = await response.json();
+
+    if (response.status !== 200) {
+      throw Error(body.message);
+    }
+
+    return body;
+  };
+
   public render() {
     return (
       <div className="App">
@@ -13,6 +31,7 @@ class App extends React.Component {
         <WelcomeImage />
         <AboutMe />
         <Experience />
+        <Repositories />
 
         <h1>Main content here</h1>
         <p>
