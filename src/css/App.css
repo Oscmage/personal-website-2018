@@ -1,0 +1,22 @@
+div {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.App,
+#root {
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Josefin Slab", "Times New Roman", Times, serif;
+  color: #1565c0;
+  font-size: 4rem;
+}

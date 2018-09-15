@@ -1,0 +1,21 @@
+.HeaderDesktopContainer {
+  width: 100%;
+  font-family: "Josefin Slab", "Times New Roman", Times, serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.HeaderDesktopContainer a {
+  text-decoration: none;
+}
+
+.LinkList {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LinkList li {
+  font-size: 2rem;
+  padding: 0 15px;
+}
