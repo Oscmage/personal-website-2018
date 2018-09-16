@@ -1,3 +1,8 @@
-.RepositoryIcons i {
-  padding: 1rem 5rem;
+.RepositoryIcons {
+  width: 200px;
+  justify-content: space-between;
+}
+
+.RepositoryIcons svg {
+  width: 50px;
 }

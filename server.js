@@ -7,7 +7,7 @@ app.get("/api/experience", (req, res) => {
   res.send({
     experienceList: [
       {
-        description: "Own firm working primarily with web",
+        description: "Working primarily with web",
         endDate: new Date(),
         present: true,
         startDate: new Date("2017-06-01"),
@@ -15,8 +15,7 @@ app.get("/api/experience", (req, res) => {
         title: "Own Firm"
       },
       {
-        description:
-          "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        description: "Working primarily with python.",
         endDate: new Date("2018-08-31"),
         present: false,
         startDate: new Date("2018-06-12"),
