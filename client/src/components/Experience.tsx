@@ -26,6 +26,15 @@ class Experience extends React.Component {
         startDate: new Date("2017-07-20"),
         subTitle: "Miami, FL",
         title: "Creative Director"
+      },
+      {
+        description:
+          "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        endDate: new Date("2018-08-20"),
+        present: true,
+        startDate: new Date("2017-07-20"),
+        subTitle: "Miami, FL",
+        title: "Creative Director"
       }
     ];
     const verticalTimelineElement = list.map(elem => (
