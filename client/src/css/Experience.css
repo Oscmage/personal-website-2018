@@ -6,3 +6,7 @@
 .ExperienceContainer div {
   display: block;
 }
+
+.vertical-timeline-element-icon.bounce-in {
+  background-size: contain !important;
+}

@@ -9,6 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 interface ITimeLineData {
   description: string;
   endDate: Date;
+  imgUrl: string;
   present: boolean;
   startDate: Date;
   subTitle: string;
@@ -55,7 +56,7 @@ class Experience extends React.Component<
           elem.endDate,
           elem.present
         )}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "url(" + elem.imgUrl + ")", color: "#fff" }}
       >
         <h3 className="vertical-timeline-element-title">{elem.title}</h3>
         <h4 className="vertical-timeline-element-subtitle">{elem.subTitle}</h4>
