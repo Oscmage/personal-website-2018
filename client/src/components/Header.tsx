@@ -5,16 +5,17 @@ import "./../css/Header.css";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
 
+import IHeaderLinks from "../interface/IHeaderLinks";
+
 class Header extends React.Component<
-  {},
-  { data: string; headerText: string; links: string[]; width: number }
+  { links: IHeaderLinks[] },
+  { data: string; headerText: string; width: number }
 > {
   constructor(props: any) {
     super(props);
     this.state = {
       data: "test",
       headerText: "Oscar Evertsson",
-      links: ["About Me", "Experience", "Github & Bitbucket", "Contact"],
       width: 0
     };
   }
@@ -34,7 +35,7 @@ class Header extends React.Component<
         <div className="HeaderWrapper">
           <HeaderDesktop
             headerText={this.state.headerText}
-            links={this.state.links}
+            links={this.props.links}
           />
         </div>
       );

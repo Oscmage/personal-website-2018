@@ -4,7 +4,10 @@ import "./../css/Repositories.css";
 class Repositories extends React.Component {
   public render() {
     return (
-      <div className="RepositoriesContainer FlexCenter FlexDirectionColumn">
+      <div
+        id="Repositories"
+        className="RepositoriesContainer FlexCenter FlexDirectionColumn"
+      >
         <h2>Repositories</h2>
         <p>
           At a current stage I manage all of my code at GitHub, but you can also

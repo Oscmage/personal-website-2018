@@ -4,7 +4,10 @@ import "./../css/Contact.css";
 class Contact extends React.Component {
   public render() {
     return (
-      <div className="ContactContainer FlexDirectionColumn FlexCenter">
+      <div
+        id="Contact"
+        className="ContactContainer FlexDirectionColumn FlexCenter"
+      >
         <h2>Contact</h2>
         <p>
           Find me on linkedin:{" "}

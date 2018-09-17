@@ -4,7 +4,7 @@ import "./../css/AboutMe.css";
 class AboutMe extends React.Component {
   public render() {
     return (
-      <div className="AboutMeContainer">
+      <div id="AboutMe" className="AboutMeContainer">
         <h2>About me</h2>
         <p>
           My name is Oscar Evertsson and I’m a 23 years old student at Chalmers

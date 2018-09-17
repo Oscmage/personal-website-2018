@@ -66,7 +66,7 @@ class Experience extends React.Component<
 
     if (experienceList === []) {
       return (
-        <div className="ExperienceContainer">
+        <div id="Experience" className="ExperienceContainer">
           <h2>Experience</h2>
           <p>Error fetching experience list</p>
         </div>
@@ -74,7 +74,7 @@ class Experience extends React.Component<
     }
 
     return (
-      <div className="ExperienceContainer">
+      <div id="Experience" className="ExperienceContainer">
         <h2>Experience</h2>
         <VerticalTimeline>{verticalTimelineElement}</VerticalTimeline>
       </div>
