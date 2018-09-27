@@ -1,0 +1,52 @@
+@import url("Hamburger.css");
+
+.HeaderMobileContainer {
+  width: 100%;
+  font-family: "Josefin Slab", "Times New Roman", Times, serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  flex-direction: column;
+}
+
+.HeaderMobileContainer header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderMobileContainer h1 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.HeaderMobileContainer a {
+  text-decoration: none;
+}
+
+.hamburger {
+  outline: none;
+}
+
+.MobileLinks {
+  display: none;
+  position: relative;
+  top: 0;
+}
+
+.MobileLinks.is-active {
+  display: block;
+}
+
+.MobileLinks ul {
+  flex-direction: column;
+}
+
+.MobileLinks li {
+  text-align: left;
+}
+
+.MobileLinks a {
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
