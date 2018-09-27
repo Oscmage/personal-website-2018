@@ -42,7 +42,10 @@ class Header extends React.Component<
     } else {
       return (
         <div className="HeaderWrapper">
-          <HeaderMobile />
+          <HeaderMobile
+            headerText={this.state.headerText}
+            links={this.props.links}
+          />
         </div>
       );
     }

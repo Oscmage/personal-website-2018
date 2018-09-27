@@ -29,7 +29,13 @@ class Experience extends React.Component<
 
   public componentDidMount() {
     this.getExperienceList()
-      .then((res: ITimeLineData[]) => this.setState({ experienceList: res }))
+      .then((res: ITimeLineData[]) => {
+        res.forEach(element => {
+          element.startDate = new Date(element.startDate);
+          element.endDate = new Date(element.endDate);
+        });
+        this.setState({ experienceList: res });
+      })
       .catch((err: Error) => console.log(err));
   }
 
@@ -66,7 +72,8 @@ class Experience extends React.Component<
 
     if (experienceList === []) {
       return (
-        <div id="Experience" className="ExperienceContainer">
+        <div className="ExperienceContainer ContentContainer">
+          <i id="Experience" className="Anchor" />
           <h2>Experience</h2>
           <p>Error fetching experience list</p>
         </div>
@@ -74,7 +81,8 @@ class Experience extends React.Component<
     }
 
     return (
-      <div id="Experience" className="ExperienceContainer">
+      <div className="ExperienceContainer ContentContainer">
+        <i id="Experience" className="Anchor" />
         <h2>Experience</h2>
         <VerticalTimeline>{verticalTimelineElement}</VerticalTimeline>
       </div>
@@ -86,18 +94,10 @@ class Experience extends React.Component<
     endDate: Date,
     present: boolean
   ): string {
-    // Javascript is stupid
-    if (typeof endDate === "string") {
-      endDate = new Date(endDate);
-    }
-    if (typeof startDate === "string") {
-      startDate = new Date(startDate);
-    }
-
     const diff = new Date(endDate.getTime() - startDate.getTime());
     const years = diff.getUTCFullYear() - 1970;
 
-    const months = diff.getMonth();
+    const months = diff.getMonth() + 1;
     if (present) {
       return (
         this.getDateAsString(startDate) +
@@ -116,9 +116,9 @@ class Experience extends React.Component<
 
   private getDateAsString(date: Date): string {
     const year = date.getFullYear();
-    const m = date.getMonth();
+    const m = date.getMonth() + 1;
     const month = m < 10 ? "0" + m : m + "";
-    const d = date.getDay();
+    const d = date.getDay() + 1;
     const day = d < 10 ? "0" + d : d + "";
     return year + "/" + month + "/" + day;
   }
@@ -134,7 +134,7 @@ class Experience extends React.Component<
     if (months === 0) {
       return yString + ")";
     } else if (months === 1) {
-      return yString + "1 month";
+      return yString + "1 month)";
     }
     return yString + months + " months)";
   }

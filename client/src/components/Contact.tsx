@@ -4,10 +4,8 @@ import "./../css/Contact.css";
 class Contact extends React.Component {
   public render() {
     return (
-      <div
-        id="Contact"
-        className="ContactContainer FlexDirectionColumn FlexCenter"
-      >
+      <div className="ContactContainer FlexDirectionColumn FlexCenter ContentContainer">
+        <i id="Contact" className="Anchor" />
         <h2>Contact</h2>
         <p>
           Find me on linkedin:{" "}

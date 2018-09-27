@@ -26,7 +26,7 @@ class App extends React.Component {
     const links = [
       { name: "About Me", id: "AboutMe" },
       { name: "Experience", id: "Experience" },
-      { name: "Github , & Bitbucket", id: "Repositories" },
+      { name: "Repositories", id: "Repositories" },
       { name: "Contact", id: "Contact" }
     ];
     return links;
