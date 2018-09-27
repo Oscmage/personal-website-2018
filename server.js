@@ -9,33 +9,34 @@ app.get("/api/experience", (req, res) => {
   res.send({
     experienceList: [
       {
-        description: "Working primarily with web",
+        description: "Working primarily with web.",
         endDate: new Date(),
         present: true,
         startDate: new Date("2017-06-01"),
         subTitle: "Gothenburg",
         title: "Own Firm",
-        imgUrl: "/api/img/background.jpg"
+        imgUrl: "/api/img/me.jpg"
       },
       {
-        description: "Working primarily with python.",
+        description:
+          "Working with payments and more specifically with the gift card system. The work involved Go lang, Python, Google cloud storage (GCS), Google KMS, Encryption/Decryption.",
         endDate: new Date("2018-08-31"),
         present: false,
         startDate: new Date("2018-06-12"),
         subTitle: "Stockholm",
         title: "Backend Developer Intern - Spotify",
-        imgUrl: "/api/img/background.jpg"
+        imgUrl: "/api/img/spotify-logo.png"
       },
       {
         description:
           "The role comprises of leading the student division board and representing the 650 students at the five year Software Engineering program.",
-        endDate: new Date("2018-06-01"),
+        endDate: new Date("2018-07-01"),
         present: false,
         startDate: new Date("2017-07-01"),
         subTitle: "Gothenburg",
         title:
           "Student Division President - Teknologsektionen Informationsteknik",
-        imgUrl: "/api/img/background.jpg"
+        imgUrl: "/api/img/itlogo.png"
       },
       {
         description:
@@ -45,7 +46,7 @@ app.get("/api/experience", (req, res) => {
         startDate: new Date("2017-06-01"),
         subTitle: "Oslo",
         title: "Software Developer Intern - Bekk Consulting AS",
-        imgUrl: "/api/img/background.jpg"
+        imgUrl: "/api/img/bekk.png"
       },
       {
         description: "Building websites.",
@@ -54,7 +55,7 @@ app.get("/api/experience", (req, res) => {
         startDate: new Date("2016-01-01"),
         subTitle: "Gothenburg",
         title: "Web Developer - We Know IT",
-        imgUrl: "/api/img/background.jpg"
+        imgUrl: "/api/img/we-know-it.png"
       }
     ]
   });
