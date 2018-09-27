@@ -25,6 +25,7 @@
 
 .WelcomeImageContainer h3 {
   margin: 10px 0 5px 0;
+  padding: 0 2rem;
   font-size: 1.9rem;
 }
 
@@ -32,6 +33,7 @@
   font-family: "Open sans", "Times New Roman", Times, serif;
   font-size: 1.2rem;
   margin: 0;
+  padding: 0 2rem;
 }
 
 .CircleImageContainer {
@@ -41,4 +43,19 @@
   box-shadow: 0 0 15px #333;
   background: center url("./../img/me.jpg");
   background-size: cover;
+}
+
+@media all and (max-height: 750px) {
+  .CircleImageContainer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .WelcomeImageContainer p {
+    font-size: 1rem;
+  }
+
+  .WelcomeImageContainer h2 {
+    font-size: 2rem;
+  }
 }
