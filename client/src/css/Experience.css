@@ -1,12 +1,27 @@
 .ExperienceContainer {
   display: block;
-  background-color: #bbdefb;
+  background-color: #335566;
 }
 
 .ExperienceContainer div {
   display: block;
 }
 
+.ExperienceContainer h2 {
+  color: white;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  color: white;
+  opacity: 0.85 !important;
+}
+
 .vertical-timeline-element-icon.bounce-in {
   background-size: contain !important;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    color: white !important;
+  }
 }

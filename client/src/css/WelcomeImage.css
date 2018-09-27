@@ -18,7 +18,8 @@
 }
 
 .WelcomeImageContainer h2 {
-  margin: 20px 0;
+  color: white;
+  margin: 10px 0;
   font-size: 3rem;
 }
 
@@ -30,6 +31,7 @@
 .WelcomeImageContainer p {
   font-family: "Open sans", "Times New Roman", Times, serif;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 .CircleImageContainer {
