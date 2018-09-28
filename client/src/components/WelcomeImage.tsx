@@ -10,7 +10,7 @@ class WelcomeImage extends React.Component {
           <div className="CircleImageContainer" />
           <h3>I'm Oscar Evertsson </h3>
           <p>
-            A 23 years old Chalmers student currently studying the masters
+            A 23 year old Chalmers student currently studying the masters
             program Software Engineering with a passion for programming,
             leadership and climbing.
           </p>
